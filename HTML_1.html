@@ -17,11 +17,11 @@
                     <p id="Rules">
                         It's quite simple...<br><br>
                         <ul>
-                            <li>First: You will click a button and a  clip from a music video will be played for you. (Thank You YouTube.com !!!)</li><br>
+                            <li>First: You will click a button and an audio clip will be played for you.</li><br>
 
-                            <li>Second: After viewing the video clip, you will be asked if you can NAME THAT TUNE !!! </li><br>
+                            <li>Second: After listening to the audio clip, you will be asked if you can NAME THAT TUNE !!! </li><br>
 
-                            <li>Third: You will input your best answer and press enter to see if you can, indeed, NAME THAT TUNE!!!</li><br>
+                            <li>Third: You will input your "best answer" and press enter to see if you can, indeed, NAME THAT TUNE!!!</li><br>
 
                             <li>Finally: The Game will let us know if you were correct when you "Named That Tune"  !!! Oh yeah !!! Fun Fun !!!</li><br>
 
@@ -32,12 +32,37 @@
         </section>
 
         <section>
-            <div>
-                <iframe width="620" height="350" src="https://www.youtube.com/embed/ummcgxXw6Z0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
+            <input>
+                <audio id= "music">
+                   
+                    </audio>
+                <p>To Play: Click the "Random Music Track Selector" button to start the game.<br><br>
+                  <button onclick="Selection_Random()">Random Music Track Selector</button> 
+                    
+                    Click the "Play That Tune" button to listen to your audio clue.<br><br>
+                    <button onclick="Play_That_Tune()">Click Here To Play That Tune</button>
 
-        </section>     
+                When you are ready to try your luck,...<br><br>
+
+                Click the "Pause That Tune" button to stop the audio playback.<br>
+                <button onclick="Pause_That_Tune()"></button>
+                Then type in your answer and press [enter] to see how lucky you are at Name That Tune!!! </p>
+                    <input id="Lucky_Guess" type="text" name:"luckyGuess" value:" "></input>
+                    <button onclick="Get_Guess">Enter</button>
+</div>
+ </section>
+ <section id="Results">
+     <p>Click The Button Below To See If you Were Lucky!</p>
+     <button onclick="Get_Your_Results()">Did You Name That Tune?</button>
+     <p id="And_The_Answer_Is"></p>
+     <br>
+     <p id="Name_Of_Track"></p>
+     <p id="Name_Of_Artist"></p>
+    <p>Do You Want To Play Again???</p>
+    <button onclick="Continue_Play()">Click Here to Play Again</button>
+    <button onclick="Stop_Play()">Click Here To End Game</button>
+</section>     
         <script src="/JavaScript/JavaScript_1.js"></script>
     </body>
 </html>
-    
+    i
