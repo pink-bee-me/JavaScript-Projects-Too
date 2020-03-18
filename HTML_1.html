@@ -5,6 +5,12 @@
         <title>Switch Case</title>
     </head>
 <body>
+<canvas id="myCanvas" width= "800px" height= "100px" style ="border:2px solid red";"></canvas>
+
+
+
+
+
  <p class="Instruction">Choose your favorite actor from the list below:</p>
  <ul>
      <li>Keanu Reeves</li>
@@ -20,7 +26,7 @@
 
 <div class = "Initial_Input">
   
-<input id="Actor_Choice1" type="text"></input>
+<input class="Input" id="Actor_Choice1" type="text"></input>
 <button onclick="Actor_Function()">Submit Your Favorite</button>
 <p id="Output"></p>
 
@@ -28,7 +34,9 @@
 
 <div class = "Alternate_Input"> <!--Second Input not visible unless first user input attempt is unsuccessful.-->
 
-<p id="Output2" style= "color:red;"></p> <!--Informs User of Input Error; Red Emphasis-->
+<p id="Output2" style= "color:BlueViolet;"></p> <!--Informs User of Input Error; Red Emphasis-->
+<p class="Instruction"></p>
+<p class="Instruction"></p>
 <p id="Second_Chance"></p> <!--Second input box; only visible after error on first input attempt-->
 <p id="ReDo"></p> <!--Second submit button-->
 <p id="Output3"></p><!--Output: Successful Second Input -->
@@ -37,6 +45,6 @@
 
 </div>
 
-<script src="JavaScript/JavaScript_1.js"></script>
+<script src="./JavaScript/JavaScript_1.js"></script>
 </body>
 </html>

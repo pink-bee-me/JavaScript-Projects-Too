@@ -1,34 +1,19 @@
-//canvas element with text and such
-var c = document.getElementById("myCanvas");
-var ctx= c.getContext("2d");
-ctx.font= "26px Ariel";
-ctx.fillText("Your Voice Matters!!!...please participate in our Favorite Actor Poll!",10,50);
 
 
-//create gradient
-//var grd = ctx.createLinearGradient(0,0,200,0);
-//grd.addColorStop(0, "purple");
-//grd.addColorStop(1, "white");
-//fill with gradient
-//ctx.fillStyle = grd;
-//ctx.fillRect(10,10,150,80);
 
 
-var default_Info;
-var Actor_String = " is a great actor!!!";
-var error_Response = "OOPS!!! That wasn't one of the options that are available... PLEASE Look At The List again and Re-Enter your Pick For Favorite Actor.";
-
-
-var Actors2;
-var Actors2A = ''; 
+var choose = "Choose Your FAVORITE Actor from the list: ";
+var enter = "Enter your choice below: ";
+var Actors2; 
 var A = [];
-   
+
 
 function Actor_Function() { 
     var Actors = document.getElementById("Actor_Choice1").value;
-    
+    var Actor_String = " is a great actor!!!";
+    var error_Response = "Would you please choose an actor for the list above (...and maybe, check your spelling too - Thank you ).";
 
-        switch(Actors || Actors2A){ 
+        switch(Actors){ 
             case "Keanu Reeves":
             Actor_Output = Actors + Actor_String;
             break;
@@ -39,7 +24,7 @@ function Actor_Function() {
             Actor_Output = Actors + Actor_String;
             break;
             case "Morgan Freeman":
-            Actor_Output = Actors + Actor_String;
+            Actor_Output = Actors+ Actor_String;
             break;
             case "Tom Hanks":
             Actor_Output = Actors + Actor_String;
@@ -57,40 +42,35 @@ function Actor_Function() {
             Actor_Output = error_Response;
         }
 
-     if (Actor_Output == Actors + Actor_String) {
+     if (Actor_Output == (Actors + Actor_String)) {
 
          document.getElementById("Output").innerHTML = Actors + Actor_String;
-             document.getElementById("End").innerHTML = "That Was Fun!!! Thank you.";
+         document.getElementById("End").innerHTML = "That Was Fun!!! ThankYou for Participating in The Favorite Actor Poll!!!";
          
-        } 
-
-    
-    
-
+    } 
     else {
 
         document.getElementById("Output2").innerHTML = error_Response;
 
         A = document.getElementsByClassName("Instruction");
-        var choose = "Choose Your FAVORITE Actor from the list: ";
-        var enter = "Enter your choice below: ";
  
-        A[0].innerHTML = "<p style ='color:#red;'>" + choose.bold() +"</p>";
-        A[1].innerHTML ="<p></p>";
+        A[0].innerHTML = "<p style ='color:red;'>" + choose.bold() +"</p>";
         A[2].innerHTML = "<p style ='color:red;'>" + enter.bold() + "</p>";
        
-        
+        {
             var another_Chance = "<input id='Actor_Choice2' type='text'></input>";
-            var ReDo_Button = "<button onclick='Actors2()'>Click Here To Re-Submit Your Choice</button>";
+            var ReDo_Button = "<button onclick='secondChance()'>Click Here To Re-Submit Your Choice</button>";
         
             document.getElementById("Second_Chance").innerHTML = another_Chance;
             document.getElementById("ReDo").innerHTML = ReDo_Button;
-        
-                Actors2 = function() {
-                     Actors = document.getElementById("Second_Chance").value;
-            
+    
+
+          
+                   
+                var Actor = document.getElementById("Actor_Choice2").value;
+
+                    Actor_Function();
                     
-                     Actor_Function();
 
                         if (Actor_Output == (Actors + Actor_String)) {
 
@@ -106,5 +86,6 @@ function Actor_Function() {
                         
                         
                 }
-        }
-    }
+            
+
+            }
