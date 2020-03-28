@@ -6,9 +6,7 @@
     </head>
 <body>
 <canvas id="myCanvas" width= "800px" height= "100px" style ="border:2px solid red";"></canvas>
-<div>
-<button onclick = "Actors_Function()">Click Here To Participate In Poll</button>
-<div id= "Show_Poll>
+
 <p class="Instruction">Choose your favorite actor from the list below:</p>
  <ul>
      <li>Keanu Reeves</li>
@@ -23,9 +21,9 @@
  <p class="Instruction">Enter your choice below:</p> 
 
 <div class = "Initial_Input">
- 
-<input id="Actor_Choice1" type="text"></input>
-<button onclick="get_Response1()">Submit Your Favorite</button>
+  
+<input id="Actor_Choice1" class="grab_It" type="text"></input>
+<button onclick="input_Grabber()">Submit Your Favorite</button>
 <p id="Output"></p>
 
 </div>
@@ -35,16 +33,14 @@
 <p id="Output2" style= "color:BlueViolet;"></p> <!--Informs User of Input Error; Red Emphasis-->
 <p class="Instruction"></p>
 <p class="Instruction"></p>
-<p class="Instruction"></p>
 <p id="Second_Chance"></p> <!--Second input box; only visible after error on first input attempt-->
 <p id="ReDo"></p> <!--Second submit button-->
 <p id="Output3"></p><!--Output: Successful Second Input -->
 <p id="Output4"></p><!--Output: Unsuccessful Second Input-->
-<p id="End"></p> <!--Thank you and Goodbye to User -->
-<p id="End2"></p>
+<p id="End"></p><!--Thank you and Goodbye to User -->
+
 </div>
-</div>
-</div>
+
 <script src="./JavaScript/JavaScript_1.js"></script>
 </body>
 </html>
