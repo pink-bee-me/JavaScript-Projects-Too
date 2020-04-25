@@ -5,32 +5,37 @@
         <title>Switch Case</title>
     </head>
 <body>
-<canvas id="myCanvas" width= "800px" height= "100px" style ="border:2px solid red";"></canvas>
-<div>
-<button onclick = "Actors_Function()">Click Here To Participate In Poll</button>
-<div id= "Show_Poll>
-<p class="Instruction">Choose your favorite actor from the list below:</p>
- <ul>
-     <li>Keanu Reeves</li>
-     <li>Clint Eastwood</li>
-     <li>Jack Nicholson</li>
-     <li>Morgan Freeman</li>
-     <li>Tom Hanks</li>
-     <li>Denzel Washington</li>
-     <li>Leonardo DiCaprio</li>
-     <li>Gene Hackman</li>
- </ul>
- <p class="Instruction">Enter your choice below:</p> 
+    <section>
+        <canvas id="myCanvas" width= "460px" height= "100px" style ="border:2px solid black";"></canvas>
+    </section>
+
+    <section>
+        <p id ="Instruction">Choose your favorite actor from the list below:</p>
+            <ul>
+                <li>Keanu Reeves</li>
+                <li>Clint Eastwood</li>
+                <li>Jack Nicholson</li>
+                <li>Morgan Freeman</li>
+                <li>Tom Hanks</li>
+                <li>Denzel Washington</li>
+                <li>Leonardo DiCaprio</li>
+                <li>Gene Hackman</li>
+            </ul>
+        <p id="Instruction">Enter your choice below:</p> 
 
 <div class = "Initial_Input">
- 
-<input id="Actor_Choice1" type="text"></input>
-<button onclick="get_Response1()">Submit Your Favorite</button>
-<p id="Output"></p>
+ <input id ="Choice" type="text"></input>
+<button id="goButton" onclick="submitFav()">Submit Your Favorite</button>
+
+<p id ="PollComplete"></p>
+<p id ="ThankYou"></p>
+<p id = "OutputError" ></p>
+<p id = "OutputError2"></p>
+<p id = "OutputChoice" ></p>
 
 </div>
 
-<div class = "Alternate_Input"> <!--Second Input not visible unless first user input attempt is unsuccessful.-->
+<div id = "Alternate_Input"> <!--Second Input not visible unless first user input attempt is unsuccessful.-->
 
 <p id="Output2" style= "color:BlueViolet;"></p> <!--Informs User of Input Error; Red Emphasis-->
 <p class="Instruction"></p>

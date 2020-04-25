@@ -1,47 +1,5 @@
 
 
-
-
-var choose = "Choose Your FAVORITE Actor from the list: ";
-var enter = "Enter your choice below: ";
-var Actors2; 
-var A = [];
-
-
-function Actor_Function() { 
-    var Actors = document.getElementById("Actor_Choice1").value;
-    var Actor_String = " is a great actor!!!";
-    var error_Response = "Would you please choose an actor for the list above (...and maybe, check your spelling too - Thank you ).";
-
-        switch(Actors){ 
-            case "Keanu Reeves":
-            Actor_Output = Actors + Actor_String;
-            break;
-            case "Clint Eastwood":
-            Actor_Output = Actors + Actor_String;
-            break;
-            case "Jack Nicholson":
-            Actor_Output = Actors + Actor_String;
-            break;
-            case "Morgan Freeman":
-            Actor_Output = Actors+ Actor_String;
-            break;
-            case "Tom Hanks":
-            Actor_Output = Actors + Actor_String;
-            break;
-            case "Denzel Washington":
-            Actor_Output = Actors + Actor_String;
-            break;
-            case "Leonardo DiCaprio":
-            Actor_Output = Actors + Actor_String;
-            break;
-            case "Gene Hackman":
-            Actor_Output = Actors + Actor_String;
-            break;
-            default:
-            Actor_Output = error_Response;
-        }
-
      if (Actor_Output == (Actors + Actor_String)) {
 
          document.getElementById("Output").innerHTML = Actors + Actor_String;

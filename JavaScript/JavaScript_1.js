@@ -1,106 +1,66 @@
-//canvas element with text and such
-var c = document.getElementById("myCanvas");
-var ctx = c.getContext("2d");
-ctx.font = "26px Ariel";
-ctx.fillText(
-  "Your Voice Matters!!!...please participate in our Favorite Actor Poll!",
-  10,
-  50
-);
+function setupCanvas() {
+// canvas element with text and linear gradient
+let myCanvas = document.getElementById("myCanvas"); //create canvas via  DOM
+let  gContext = myCanvas.getContext("2d"); //2d context 
+let myGradient = gContext.createLinearGradient(10,10,750,80); //(x-axis, y-axis, width, height)
 
-//create gradient
-//var grd = ctx.createLinearGradient(0,0,200,0);
-//grd.addColorStop(0, "purple");
-//grd.addColorStop(1, "white");
-//fill with gradient
-//ctx.fillStyle = grd;
-//ctx.fillRect(10,10,150,80);
-var div1 =document.getElementById("Show_Poll") 
-div1.style.visibility='hidden';
-function Actors_Function() {
-
-div1.style.visibility='visible';
-
-function get_response1() {
-  var Actors = document.getElementById("Actors_Choice1").value;
+myGradient.addColorStop(0,'#82c3c3'); //first color stop of gradient
+myGradient.addColorStop(1,'#4141c3'); //second color stop of gradient
+gContext.fillStyle = myGradient;
+gContext.fillRect(10,10,440,80);
+textInCanvas();
 }
-  var Actor_String = " is a great actor!!!";
-  var error_Response =
-    "OOPS!!! That wasn't one of the options that are available... PLEASE Look At The List again and Re-Enter your Pick For Favorite Actor.";
-choice_Made();
-    function choice_Made() {
-  switch (Actors) {
-    case "Keanu Reeves":
-      Actor_Output = Actors + Actor_String;
-      break;
-    case "Clint Eastwood":
-      Actor_Output = Actors + Actor_String;
-      break;
-    case "Jack Nicholson":
-      Actor_Output = Actors + Actor_String;
-      break;
-    case "Morgan Freeman":
-      Actor_Output = Actors + Actor_String;
-      break;
-    case "Tom Hanks":
-      Actor_Output = Actors + Actor_String;
-      break;
-    case "Denzel Washington":
-      Actor_Output = Actors + Actor_String;
-      break;
-    case "Leonardo DiCaprio":
-      Actor_Output = Actors + Actor_String;
-      break;
-    case "Gene Hackman":
-      Actor_Output = Actors + Actor_String;
-      break;
-    default:
-      Actor_Output = error_Response;
-  }
-
-
-  choice_Made();
-
-
-if (Actor_Output !== error_Response) {
-  document.getElementById("Output").innerHTML = Actor_Output;
-  document.getElementById("End").innerHTML = "That Was Fun!!! Thank you.";
-} else {
-  document.getElementById("Output2").innerHTML = error_Response;
-
-  A = document.getElementsByClassName("Instruction");
-  var choose = "Choose Your FAVORITE Actor from the list: ";
-  var enter = "Enter your choice below: ";
-
-  A[0].innerHTML = "<p style ='color:#red;'>" + choose.bold() + "</p>";
-  A[1].innerHTML = "<p></p>";
-  A[2].innerHTML = "<p style ='color:red;'>" + enter.bold() + "</p>";
+function textInCanvas(){
+let myCanvas2 = document.getElementById("myCanvas");
+let gContext = myCanvas2.getContext("2d");
+gContext.font = "22px Ariel Bold"; //font of fillText
+gContext.fillStyle = '#111212';
+gContext.fillText("It's time for The Annual Favorite Actor Poll !!!",20,55)
 }
 
-  var another_Chance = "<input id='Actor_Choice2' type='text'></input>";
+ 
+setupCanvas();
 
-  var ReDo_Button =
-    "<button onclick='get_Response()'>Click Here To Re-Submit Your Choice</button>";
-  document.getElementById("Second_Chance").innerHTML = another_Chance;
-  document.getElementById("ReDo").innerHTML = ReDo_Button;}
-}
+ function submitFav() { 
+
+    let favActor = document.getElementById("Choice").value;
+
+    let favOutput  = `${favActor} !  Wow! What a great pick! We love him too!`;
+   
+    let errorNotValid = "Please pick an actor from the list above ( You might need to check your spelling too!). ";
+   
+    let response =  undefined;
   
-  function get_Response2() {
-    Actors = document.getElementById("Actor_Choice2").value;
+    let thankYouNote = " Thank you for taking the time to participate in our  Annual Favorite Actor Poll... Be sure and check back in to see which actor  'takes the cake' !!! Have a great Day.. and don't forget, Your Voice Really Does Matter, so Let It Be Heard !!! ";
     
-    choice_Made();
 
-    if ((Actor_Output = error_Response)) {
-      document.getElementById("Output4").innerHTML =
-        "Thank You for Your Input! We will take your suggestion into consideration...<br> Who Knows???<br><br> ...maybe, " +
-        Actors +
-        " will be on the NEXT Edition Of Our FAVORITE ACTORS LIST!!!<br><br>Thank you for your time and thoughtful contribution...GOOD-BYE!!!";
-    } else {
-      document.getElementById("Output3").innerHTML =
-        "Wow!!! " + Actors + "!!!! That's our FAVORITE TOO!!!";
-      document.getElementById("End2").innerHTML =
-        "We appreciate your participation. Thank You!!!";
-    }
-  }
+switch (favActor) { 
+  case "Keanu Reeves":
+  case "Clint Eastwood":
+  case "Jack Nicholson":
+   case "Morgan Freeman":
+  case "Tom Hanks":
+  case "Denzel Washington":
+  case "Leonardo DiCaprio":
+  case "Gene Hackman":
+        response = favOutput;
+        document.getElementById("PollComplete").innerHTML =  response;
+        document.getElementById("goButton")
+        .addEventListener("click",
+         function(){
+   let error1 = document.getElementById("OutputError").value;
+   let error2 = document.getElementById("OutputError2").value;
+  error1.hidden = true;
+  error2.hidden =true;
+         });
+        document.getElementById("ThankYou").innerHTML = thankYouNote ;
+        break;
+  
+  default:
+        response = errorNotValid;
+         document.getElementById("OutputError").innerHTML =  response
+    document.getElementById("OutputError2").innerHTML = "Let's Try That One More Time....";
 
 
+              }
+            }
