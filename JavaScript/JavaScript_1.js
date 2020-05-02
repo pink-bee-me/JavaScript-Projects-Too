@@ -38,7 +38,7 @@ switch (favActor) {
   case "Keanu Reeves":
   case "Clint Eastwood":
   case "Jack Nicholson":
-   case "Morgan Freeman":
+  case "Morgan Freeman":
   case "Tom Hanks":
   case "Denzel Washington":
   case "Leonardo DiCaprio":
