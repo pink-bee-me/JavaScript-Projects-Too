@@ -2,18 +2,37 @@
 <html lang="en">
     <head>
         <meta charset=UTF-8>
-        <title>Data Attribute</title>
+        <title>Data Attribute Assignment</title>
+        <link rel="stylesheet" href="./CSS/styles_html_3_data_attributes.css">
     </head>
     <body>
-        <h1>Video Game Classics (...or Should Be)</h1>
-        <P>Pick a title to watch a clip of the Classic Titles Below:</P>
-        <ul>
-            <li data-game_maker ="Atari" data-game_year ="1980" data-game_type = "arcade"><button onclick="Pick_Me">Battle Zone</button></li>
-            <li data-game_maker ="Naughty Dog" data-game_year ="1996" data-game_type= "PS2"><button onclick="Pick_Me">Crash Bandicoot</button></li>
-            <li data-game_maker = "Oddworld Inhabitants" data-game_year ="1997" data-game_type = "PS2"><button onclick="Pick_Me">OddWorld: Abe's Oddysee</button></li>
-            <li data-game_maker = "Santa Monica Studio" data-game_year="2018" data-game_type="PS4"><button onclick="Pick_Me">God Of War</button></li>
+        <h1>Today We Are Going Back In Time...</h1>
+           <h2> Back To A Place In Time Where Big Hair Was Still A "Thing" , Where Men At Work, came from a land down under... where Michael Jackson was even more than Thriller. That place in time when  M.C. Hammer was still rappin', not preachin', and you would never dream of buying a home from the dopest of dope and the coolest of  coolest of cool Vanilla Ice Ice Baby. Oh those were the days, I remeber it well, I had just started getting into a new musician,...he was such a silly boy...maybe you ghave heard of him? You know.. the guy that namend himself after the candy coated chocolate treat I remember it will couldn't get any cooler than Ice Ice Baby Not preachin', and Mike Tyson hadn't hooked up with Robin Givens. 
+               -- You Know - The good ol' days!!! When there was a reason to make sure you always had a good supply of quarters on you and using the vacuum cleaner at the car wash was Not why you had a bunch of quarters in  your pocket !!!  Video Game Classics</h1>
+        <h3> ()</h3>
+        <p>Go Ahead - Click On A Game Title And Check It Out <br>
+            ...you never know, we might even throw in some stats for your viewing pleasure !!</p>
+       
+        <ul id="Game_Selection" >
+
+         <li id="BattleZone"class="myGameList"  onclick="Pick_Me(this)"  data-game_maker ="Atari" data-game_year ="1980" data-game_type = "Arcade"><a href="#">Battle Zone</a></li>
             
-        </ul>
+            <li  id= "CrashBandicoot" class="myGameList" onclick="Pick_Me(this)" data-game_maker ="Naughty Dog" data-game_year ="1996" data-game_type= "PlayStation 2"> <a  href="#" >Crash Bandicoot</a></li>
+           
+            <li  id= "OddWorld" class="myGameList" onclick="Pick_Me(this)" data-game_maker = "OddWorld Inhabitants" data-game_year ="1997" data-game_type = "PlayStation 2"><a href="#">OddWorld: Abe's Oddysee</a></li>
+            
+            <li id= "GodOfWar"  class="myGameList" onclick="Pick_Me(this)"data-game_maker = "Santa Monica Studio" data-game_year="2018" data-game_type="PlayStation 4"><a href="#">God Of War</a></li>
+
+            <li  id="Joust" class="myGameList" onclick="Pick_Me(this)" data-game_maker="Williams Electronics" data-game_year= "1982"
+            data-game_type="Arcade"><a  href="#">Joust</a></li>  
+         </ul>
+
+         <section id="Video_Clip">
+        
+         </section>  
+         
+         <p id="DisplayStats"></p>
+
         <script src="./JavaScript/JavaScript_3.js"></script>
     </body>
 </html>

@@ -1,0 +1,18 @@
+#Game_Selection {
+    cursor: pointer;
+}
+
+
+#Video_Clip {
+    position: relative;
+    left:60vh;
+    bottom:25vh;
+    width: 75vh;
+    height:50vh;
+}
+#Game_Clip {
+position:absolute;
+width:75vh;
+height:60vh;
+
+}

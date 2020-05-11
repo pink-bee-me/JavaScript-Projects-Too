@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
+        <meta charset="UTF-16">
         <title>Contact Form</title>
           <link rel="stylesheet" href="./CSS/CSS_1.css">
     </head>
@@ -9,16 +9,18 @@
 <body>
     <center>
         <section id="contactFormContainer" > 
-             <h2>How Can We Reach You???</h2>
-                  <form id = "contactForm" action="" onsubmit = "return         validate()" method = "">
-                        <label >First name:</label><br>
-                        <input class= "contactData" type=text id="fname" name="fname" value=" "><br>
-                        <label >Last name:</label><br>
-                        <input class ="contactData" type="text" id="lname" name="lname" value= " "><br>
-                      <label>Email:</label>
-                        <input class="contactData" type="email" id="email" name ="email" value  =" "> <br><br>
+             <h2>Ready to Sign Up?</h2>
+             <br>
+                  <form id = "contactForm" action="" onsubmit = "        validate()" method = "">
+                        <label >First Name:</label><br>
+                        <input class= "signUpData" type=text id="fname" name="fname" required><br>
+                        <label >Last Name:</label><br>
+                        <input class ="signUpData" type="text" id="lname" name="lname" required><br>
+                      <label>Password:</label>
+                        <input  id="password"  class="signUpData" type="password" inputmode= "numeric"  name ="password" minlength ="6"  required> <br><br>
                         <input type="submit" value="Submit">
-                              <p>***Note: We will NEVER share your information. Thank you.***</p>
+                              <p>***Note: We will NEVER share your information.***</p>
+                              <p id="Valid"></p>
                     </form>
          </section>
      </center>
