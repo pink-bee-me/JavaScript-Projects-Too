@@ -10,7 +10,7 @@
     width: 75vh;
     height:50vh;
 }
-#Game_Clip {
+.gameClip {
 position:absolute;
 width:75vh;
 height:60vh;
