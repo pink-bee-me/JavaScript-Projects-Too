@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset=UTF-8>
+        <meta charset="UTF-8">
         <title>Data Attribute Assignment</title>
         <link rel="stylesheet" href="./CSS/styles_html_3_data_attributes.css">
     </head>
@@ -13,31 +13,31 @@
            <h3> ...you never know, we might even throw in some stats for your viewing pleasure !! </h3>
         
        
-        <ul id="Game_Selection" >
+        <ul id="Game_List" >
 
-         <li id="BattleZone"class="myGameList"  onclick="Pick_Me(this)"  data-game_maker ="Atari" data-game_year ="1980" data-game_type = "Arcade"><a href="#">Battle Zone</a></li>
+         <li id="0_BattleZone"class="pickGameList"  onclick="PickedOnClick(thi"  data-game_maker ="Atari" data-game_year ="1980" data-game_type = "Arcade"><a href="#">Battle Zone</a></li>
             
-            <li  id= "CrashBandicoot" class="myGameList" onclick="Pick_Me(this)" data-game_maker ="Naughty Dog" data-game_year ="1996" data-game_type= "PlayStation 2"> <a  href="#" >Crash Bandicoot</a></li>
+            <li  id= "1_CrashBandicoot" class="pickGameList" onclick="PickedOnClick(this.IDBCursor)" data-game_maker ="Naughty Dog" data-game_year ="1996" data-game_type= "PlayStation 2"> <a  href="#" >Crash Bandicoot</a></li>
            
-            <li  id= "OddWorld" class="myGameList" onclick="Pick_Me(this)" data-game_maker = "OddWorld Inhabitants" data-game_year ="1997" data-game_type = "PlayStation 2"><a href="#">OddWorld: Abe's Oddysee</a></li>
+            <li  id= "2_OddWorld" class="pickGameList" onclick="PickedOnClick(this.id)" data-game_maker = "OddWorld Inhabitants" data-game_year ="1997" data-game_type = "PlayStation 2"><a href="#">OddWorld: Abe's Oddysee</a></li>
             
-            <li id= "GodOfWar"  class="myGameList" onclick="Pick_Me(this)"data-game_maker = "Santa Monica Studio" data-game_year="2018" data-game_type="PlayStation 4"><a href="#">God Of War</a></li>
+            <li id= "3_GodOfWar"  class="pickGameList" onclick="PickedOnClick(this.id)"data-game_maker = "Santa Monica Studio" data-game_year="2018" data-game_type="PlayStation 4"><a href="#">God Of War</a></li>
 
-            <li  id="Joust" class="myGameList" onclick="Pick_Me(this)" data-game_maker="Williams Electronics" data-game_year= "1982"
-            data-game_type="Arcade"><a  href="#">Joust</a></li> 
+            <li  class="pickGameList" data-game_maker="Williams Electronics" data-game_year= "1982"
+            data-game_type='Arcade'><button id="4_Joust"  onclick="PickedOnClick()"> Joust</button></li> 
            
-            <li id="LittleBigPlanet" class="myGameList" data-game_maker="" data-game_year="" data-game_type="" onclick="Pick_Me(this)"><a href="#">Little Big Planet</a></li>
+            <li id="5_LittleBigPlanet" class="pickGameList" data-game_maker="" data-game_year="" data-game_type="" onclick="PickedOnClick()"><a href="#">Little Big Planet</a></li>
 
-            <li id="Defender" class="myGameList" data-game_maker="" data-game_year="" data-game_type="" onclick="Pick_Me(this)"><a href="#">Defender</a></li>
+            <li id="6_Defender" class="pickGameList" data-game_maker="" data-game_year="" data-game_type="" onclick="PickedOnClick()"><a href="#">Defender</a></li>
             
             
-            <li id="SpaceAce" class="myGameList" data-game_maker="" data-game_year="" data-game_type="" onclick="Pick_Me(this)"><a href="#">Space Ace</a></li>
+            <li id="7_SpaceAce" class="pickGameList" data-game_maker="" data-game_year="" data-game_type="" onclick="PickedOnClick()"><a href="#">Space Ace</a></li>
 
-            <li id="SpaceInvaders" class="myGameList" data-game_maker="" data-game_year="" data-game_type="" onclick="Pick_Me(this)"><a href="#">Space Invaders</a></li>
+            <li id="8_DigDug" class="pickGameList" data-game_maker="" data-game_year="" data-game_type="" onclick="PickedOnClick()"><a href="#">Dig Dug</a></li>
 
-            <li id="Centipede" class="myGameList" data-game_maker="" data-game_year="" data-game_type="" onclick="Pick_Me(this)"><a href="#">Centipede</a></li>
+            <li id="9_QBert" class="pickGameList" data-game_maker="" data-game_year="" data-game_type="" onclick="PickedOnClick(this)"><a href="#">Q*Bert</a></li>
 
-            <li id="MediEval" class="myGameList" data-game_maker="" data-game_year="" data-game_type="" onclick="Pick_Me(this)"><a href="#">MediEval</a></li>
+            <li id="10_MediEvil" class="pickGameList" data-game_maker="" data-game_year="" data-game_type=""><input onclick="PickedOnClick(this)"><a href="#">MediEval</a></input></li>
          </ul>
 
          <section id="Video_Clip"></section>
