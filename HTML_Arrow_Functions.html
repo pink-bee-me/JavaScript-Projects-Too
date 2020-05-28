@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Arrow Functions</title>
+    </head>
+    <body>
+        <script>
+        function intro1()  {
+            var greeting = "Hello There !!";
+            document.getElementById("IntroStatement").innerHTML = greeting;
+        }   
+    </script>
+
+    <button id="btnIntro1" onclick="intro1()">Click Me</button>
+
+<p id= "IntroStatement"></p>
+
+<script>
+    var greeting = "Hey What's Up ?"
+    intro2 = () => {
+        document.getElementById("IntroStatement").innerHTML = greeting;
+    }
+    </script>
+
+<button id="btnIntro2" onclick="intro2()">Click Me</button>
+
+
+
+</body>
+</html>
