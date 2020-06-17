@@ -1,18 +1,69 @@
-#Game_Selection {
+h1 {
+    font-size: 2em;
+    font-weight: 900;
+    color: orchid;
+    text-shadow: 1.5px 1.5px 1.5px black;
+}
+
+h3 {
+    font-style:italic;
+    line-height: 1.5em;
+}
+
+#Classic_Game_List {
+    position:relative;
+    height: 75%;
+    width:100%;
+}
+#GameChoiceList {
+    position:relative;
     cursor: pointer;
+    margin-top: 5%;
+
+}
+ul {
+    position:relative;
 }
 
+#Now_Playing {
+    position:relative;
+    margin-top: 80%;
+    margin-bottom:1%;
+    padding:1%;
+    left:25%;
+    width: 80vh;
+    height:10vh;
+ }   
 
-#Video_Clip {
+
+li {
+    margin-top: 2%;
+    line-height: 1.5em;
+    font-size: 1em;
+}
+
+#Game_List {
+    position:relative;
+}
+
+ #Now_Playing {
+    position:relative;
+    top: -600px;
+    left: 400px;
+    margin-top:0;
+    font-size:1.5em;
+}
+
+#videoPlayer {
     position: relative;
-    left:60vh;
-    bottom:25vh;
-    width: 75vh;
-    height:50vh;
+    right:-50vh;
+    top:40vh;
+    border: 4px solid black;
 }
+
 .gamePlay {
 position:absolute;
-width:75vh;
-height:60vh;
-
+width:99%;
+height:99%;
+border:4px solid black
 }
