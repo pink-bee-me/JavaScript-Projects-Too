@@ -29,39 +29,40 @@ function PickedOnClick(clicked_id) {
     
     switch (clicked_id) {
 
-        case "0_BattleZone":
+        case "BattleZone_0":
             document.getElementById("Now_Playing").innerHTML = marquee + "Battle Zone";
+            document.getElementById("videoPlayer").focus();
             document.getElementById("videoPlayer").innerHTML = vidClip[0];
             break;
-        case "1_CrashBandicoot":
+        case "CrashBandicoot_1":
             document.getElementById("Video_Clip").innerHTML = vidClip[1];
             break;
-        case "2_OddWorld":
+        case "OddWorld_2":
             document.getElementById("Video_Clip").innerHTML = vidClip[2];
             break;
-         case "3_Joust":
+         case "Joust_3":
             document.getElementById("Video_Clip").innerHTML = vidClip[3];
             break;
-        case "4_LittleBigPlanet":
+        case "LittleBigPlanet_4":
             document.getElementById("Video_Clip").innerHTML = vidClip[4];
             break;
-        case "5_Defender":
+        case "Defender_5":
             document.getElementById("Video_Clip").innerHTML = vidClip[5];
             break;
-        case "6_SpaceAce":
+        case "SpaceAce_6":
             document.getElementById("Video_Clip").innerHTML = vidClip[6];
             break;
-        case "7_DigDug":
+        case "DigDug_7":
             document.getElementById("Video_Clip").innerHTML = vidClip[7];
             break;
-        case "8_QBert":
+        case "QBert_8":
             document.getElementById("Video_Clip").innerHTML = vidClip[8];
             break;
-        case "9_MediEvil":
+        case "MediEvil_9":
             document.getElementById("Video_Clip").innerHTML = vidClip[9];
             break;
-        case "10_Katamari":
-            document.getElementById("Video_Clip").innerHTML = vidClip[10];
+        case "Katamari_10":
+            document.getElementById("IFRAME_INSERT").innerHTML = vidClip[10];
             break;
         default:
             document.getElementById("oops").innerHTML = "What we have here,... is a failure to communicate! Houston! We have a problem!! We apologize for this unexpected interruption of our regularly scheduled content.";

@@ -1,0 +1,256 @@
+body {
+    top: 0;
+    left: 0;
+    margin: 0;
+    background-color:black;
+}
+
+section {
+    height: auto;
+}
+
+#Intro {
+    display: flex;
+    justify-content: center;
+    height: 900px;
+    perspective: 1000px;
+    color: fuchsia;
+    text-shadow: 2px 2px 2px peachpuff;
+    font-family: "Pathway Gothic One", sans-serif;
+    font-size: 150%;
+    font-weight: 600;
+    letter-spacing: 2px;
+    line-height: 125%;
+    text-align: justify;
+    background-color: black;
+
+}
+
+
+.crawl {
+    position: relative;
+    width: 100%;
+    top: -100px;
+    transform-origin: 15% 100%;
+    animation: crawl 45s linear;
+}
+
+@keyframes crawl {
+    0% {
+        top: 0;
+        transform: rotateX(45deg) translateZ(0);
+    }
+
+    100% {
+        top: -6000px;
+        transform: rotateX(25deg) translateZ(-2500px);
+    }
+}
+
+#GamesTitle {
+    display: flex;
+    justify-content: center;
+    height: 1200px;
+    perspective: 1000px;
+    color:fuchsia;
+    text-shadow: 2px 2px 2px peachpuff;
+    font-family: "Pathway Gothic One", sans-serif;
+    font-size: 150%;
+    font-weight: 600;
+    letter-spacing: 2px;
+    line-height: 125%;
+    text-align: justify;
+    background-color: black;
+
+}
+
+
+
+
+
+#games {
+    top:50px;
+    text-align: center;
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding-bottom:1%;
+    position: relative;
+    width: 100%;
+    top: -100px;
+}
+
+
+
+h1 {
+    position: relative;
+    top: 2%;
+    margin-top: 2%;
+    padding-left: 1%: margin-bottom:1%;
+    padding-top: 1%;
+    text-align: center;
+    font-weight: 900;
+    color: fuchsia;
+    text-shadow: 1.75px 1.75px 1.75px cornflowerblue;
+
+}
+
+#memories {
+    color;
+    text-shadow: 1.25px 1.25px 1.25px fuchsia;
+    margin-left: 5%;
+    font-style: italic;
+    text-align: center;
+}
+
+h3 {
+    font-style: italic;
+
+    color: peachpuff;
+    text-shadow: 1.25px 1.25px 1.25px fuchsia;
+    margin-left: 5%;
+    line-height: normal;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+#GamesTitle {
+    color: fuscia;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 2px white;
+    text-align: center;
+    margin-top: 0;
+}
+
+#disclaimer {
+    color: orange;
+    text-shadow: 1.25px 1.25px 1.25px fuchsia;
+    text-align: center;
+    margin-top: 0;
+}
+
+.special {
+    font-size: larger;
+    color: cornflowerblue;
+}
+
+.Cheer {
+    font-size: 2rem;
+    color: fuchsia;
+    text-shadow: 1.25px 1.25px 1.25px cornflowerblue;
+}
+
+#a-do {
+    color: fuchsia;
+    text-align: center;
+    font-style: italic;
+}
+
+.Classic {
+    color: peachpuff;
+    text-shadow: 1.5px 1.5px 1.5px fuchsia;
+}
+
+#go {
+    position: relative;
+    text-align: center;
+    top: -25px;
+    color: cornflowerblue;
+    text-shadow: 1.5px 1.5px 1.5px fuchsia;
+}
+
+.blue {
+    font-size: 1rem;
+    color: cornflowerblue;
+    position: relative;
+    text-align: center;
+    left: 200;
+}
+
+}
+
+#GameChoiceList {
+    position: relative;
+    cursor: pointer;
+    padding-top:2%;
+
+
+}
+
+ul {
+    position: relative;
+}
+
+
+
+
+li {
+    font-size: 1.5rem;
+    color: fuchsia;
+    margin-top: 2%;
+    line-height: 1.5em;
+
+}
+
+a {
+    color: lime;
+}
+
+#Game_List {
+    position: relative;
+    padding-top: 0;
+height:900px;
+}
+
+#Now_Playing {
+    position: relative;
+    color: lime;
+    margin-top: 0;
+    font-size: 2rem;
+}
+
+#Classic_Game_List {
+    position: relative;
+    width: 50%;
+    height: 70%;
+    float: left;
+    
+    padding-bottom: 5%;
+    background-color: black;
+
+}
+
+.gamePlay {
+    position: relative;
+    width: 99%;
+    height: 99%;
+    border: 4px solid black
+}
+
+#Player {
+    position: relative;
+    width: 50%;
+    height: 900px;
+    padding-bottom: 10%;
+    background-color: black;
+    float: left;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+
+#videoPlayer {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#IFRAME_INSERT {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}

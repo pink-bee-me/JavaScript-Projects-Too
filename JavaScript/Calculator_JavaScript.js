@@ -17,7 +17,7 @@ function Input_Digit(digit) {
     //Display_Value to the key that was clicked.
     if (Wait_Second_Operand === true) {
         Calculator.Display_Value = digit;
-        Calculator.Wait_second_Operand = false;
+        Calculator.Wait_Second_Operand = false;
 } else {
     //this overwrites Display_Value if the current value is 0
     //otherwise it adds onto it
@@ -63,7 +63,7 @@ if  (First_Operand == null) {
     //operator is executed
     const result = Perform_Calculation[operator] (Value_Now, Value_of_Input);
 
-    Calculator.Dispaly_Value = String(result);
+    Calculator.Display_Value = String(result);
     Calculator.First_Operand = result;
 }
 Calculator.Wait_Second_Operand = true;
